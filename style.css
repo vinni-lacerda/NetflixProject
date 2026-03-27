@@ -17,6 +17,7 @@ ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -68,12 +69,29 @@ figure{
 }
 
 img{
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     border-radius: 8px;
     object-fit: cover;
     margin-bottom: 0.5rem;
     background: #222;
+}
+.botao-gerenciar{
+    background: transparent;
+    border: 1px solid grey;
+    color: grey;
+    padding: 10px 30px;
+    font-size: 1vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 200;
+    transition: all 0.3s;
+}
+
+.botao-gerenciar:hover {
+    border-color: #e5e5e5;
+    color: #e5e5e5;
 }
 
 @media(max-width: 900px){
