@@ -13,6 +13,15 @@ main{
     justify-content: center;
     min-height: 100vh;
 }
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
 
 h1{
     font-size: 2.5rem;
@@ -65,4 +74,41 @@ img{
     object-fit: cover;
     margin-bottom: 0.5rem;
     background: #222;
+}
+
+@media(max-width: 900px){
+    section[aria-label="Perfis disponiveis"]{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    nav.profiles{
+        gap: 1rem;
+    }
+    img{
+        width: 90px;
+        height: 90px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 600px){
+    main{
+        margin-top: 6rem;
+        min-height: auto;
+        padding: 2rem 0;
+    }
+
+    nav.profiles{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul{
+        gap: 4rem;
+        list-style-type: none;
+    }
 }
